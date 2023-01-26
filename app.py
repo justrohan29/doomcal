@@ -23,6 +23,7 @@ if sel=="Encryption":
      
         return result
     
+    st.text("Encrypted Text: ")
     st.success(encrypt(text,s))
     
 else:
