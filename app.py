@@ -55,7 +55,7 @@ else:
     
     
 with st.sidebar:
-        st.write('Made By:   Rohan Singh🙏")
+        st.write("Made By:   Rohan Singh🙏")
 	st.write("Class-11C")
 	st.write("Age-16")
 	
