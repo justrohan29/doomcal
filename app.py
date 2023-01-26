@@ -1,5 +1,8 @@
 import streamlit as st
 
+st.title('Python based Encryption and Decryption')
+
+
 sel = st.selectbox('Select:', ['Encryption', 'Decryption'])
 
 if sel=="Encryption":
