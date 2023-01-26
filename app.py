@@ -11,5 +11,4 @@ def caesar_shift(encrypt, places=key):
     encrypt = encrypt.lower().replace(' ', '')
     s = ''.join(substitute(char) for char in encrypt
      
-st.text("Encrypted Text: ")
 st.success(s)
