@@ -56,11 +56,15 @@ else:
     
 with st.sidebar:
 	
-#	if st.button('Check me out'):
-#    		webbrowser.open_new_tab('https://just--rohan.blogspot.com/')
+
 	st.write('Made By:   Rohan Singh🙏')
 	st.write('Class-11C')
 	st.write('Age-16')
+	
+	with st.echo():
+        	st.write('Made By:   Rohan Singh🙏')
+		st.write('Class-11C')
+		st.write('Age-16')
 	
 	
 
