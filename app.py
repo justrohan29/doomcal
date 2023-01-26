@@ -19,7 +19,7 @@ if sel=="Encryption":
                 result += chr((ord(char) + s-65) % 26 + 65)
                 
             elif (char.isspace()):
-                result += chr((ord(char) + 0 - 0) % 26 + 32)
+                result += chr((ord(char) + 0 - 0) % 26 + 26)
      
             else:
                 result += chr((ord(char) + s - 97) % 26 + 97)
