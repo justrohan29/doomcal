@@ -52,3 +52,22 @@ else:
     
     st.text("Encrypted Text: ")
     st.success(encrypt2(text2,s2))
+    
+    
+with st.sidebar:
+	
+#	if st.button('Check me out'):
+#    		webbrowser.open_new_tab('https://just--rohan.blogspot.com/')
+	st.write('Made By:   Rohan Singh🙏')
+	st.write('Class-11C')
+	st.write('Age-16')
+	
+	
+
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden; }
+        footer {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
