@@ -1,4 +1,7 @@
 import streamlit as st
+ 
+text = st.text_input('Enter Text To Encrypt')
+s = st.slider('Choose Key For Encryption:', 0, 25)
 
 def encrypt(text,s):
     result = ""
@@ -13,8 +16,5 @@ def encrypt(text,s):
             result += chr((ord(char) + s - 97) % 26 + 97)
  
     return result
- 
-encrypt = st.text_input('Enter Text To Encrypt')
-key = st.slider('Choose Key For Encryption:', 0, 25)
 
 st.success(encrypt(text,s))
