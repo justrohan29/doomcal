@@ -5,6 +5,6 @@ encrypt = encrypt.lower().replace(" ", "")
 
 key = st.slider('Enter Key For Encryption:', 0, 25)
 
-s = ''.join(chr(ord(char) + 5) for char in encrypt)
+s = ''.join(chr(ord(char) + key) for char in encrypt)
 st.text("Encrypted Text: ")
 st.success(s)
