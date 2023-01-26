@@ -62,9 +62,9 @@ with st.sidebar:
 	st.write('Age-16')
 	
 	with st.echo():
-        	st.write('Made By:   Rohan Singh🙏')
-		st.write('Class-11C')
-		st.write('Age-16')
+        st.write('Made By:   Rohan Singh🙏')
+	st.write('Class-11C')
+	st.write('Age-16')
 	
 	
 
