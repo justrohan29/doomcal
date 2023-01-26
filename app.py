@@ -41,6 +41,9 @@ else:
      
             if (char2.isupper()):
                 result += chr((ord(char2) - s2-65) % 26 + 65)
+                
+            elif (char2.isspace()):
+                result += chr((ord(char2) - 0 - 0) % 26 + 26)
      
             else:
                 result += chr((ord(char2) - s2 - 97) % 26 + 97)
