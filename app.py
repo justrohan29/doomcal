@@ -1,19 +1,20 @@
 import streamlit as st
-from string import ascii_lowercase
 
+def encrypt(text,s):
+    result = ""
+ 
+    for i in range(len(text)):
+        char = text[i]
+ 
+        if (char.isupper()):
+            result += chr((ord(char) + s-65) % 26 + 65)
+ 
+        else:
+            result += chr((ord(char) + s - 97) % 26 + 97)
+ 
+    return result
+ 
 encrypt = st.text_input('Enter Text To Encrypt')
-
 key = st.slider('Choose Key For Encryption:', 0, 25)
 
-
-def caesar_shift(encrypt, places=key):
-    def substitute(char):
-        if char in ascii_lowercase:
-            char_num = ord(char) - 97
-            char = chr((char_num + places) % 26 + 97)
-        return char
-    encrypt = encrypt.lower().replace(' ', '')
-    s = ''.join(substitute(char) for char in encrypt
- 
-st.text("Encrypted Text: ")
-st.success(s)
+st.success(encrypt(text,s))
