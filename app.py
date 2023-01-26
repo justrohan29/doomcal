@@ -1,5 +1,7 @@
 import streamlit as st
- 
+
+sel = st.selectbox('Select:', ['Encryption', 'Decryption'])
+
 text = st.text_input('Enter Text To Encrypt')
 s = st.slider('Choose Key For Encryption:', 0, 25)
 
