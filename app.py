@@ -43,4 +43,5 @@ else:
      
         return result
     
+    st.text("Encrypted Text: ")
     st.success(encrypt2(text2,s2))
