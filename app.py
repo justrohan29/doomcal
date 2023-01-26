@@ -2,7 +2,7 @@ import streamlit as st
 
 sel = st.selectbox('Select:', ['Encryption', 'Decryption'])
 
-if sel==Encryption:
+if sel=="Encryption":
     st.text(test1)
 
 text = st.text_input('Enter Text To Encrypt')
